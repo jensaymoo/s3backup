@@ -38,7 +38,7 @@ namespace s3backup.Encryption
                     {
                         await using (var cryptoStream = new CryptoStream(outputFileStream, encryptor, CryptoStreamMode.Write))
                         {
-                            await using var inputFileStream = new FileStream(inputFilePath, FileMode.Open);
+                            await using var inputFileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                             await inputFileStream.CopyToAsync(cryptoStream, token);
                         }
                     }
