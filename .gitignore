@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /AWSENCR/config.json
+/s3backup/config.json
+/s3backup/Properties/launchSettings.json
