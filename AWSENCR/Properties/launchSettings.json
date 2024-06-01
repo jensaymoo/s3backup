@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "s3backup": {
-      "commandName": "Project",
-      "commandLineArgs": "restore"
-    }
-  }
-}
