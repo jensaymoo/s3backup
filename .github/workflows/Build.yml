@@ -48,7 +48,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: filehash-${{ steps.lastcommit.outputs.shorthash }}
+        name: s3backup-${{ steps.lastcommit.outputs.shorthash }}
         tag_name: latest
         make_latest: true
         files: /usr/share/s3backup
