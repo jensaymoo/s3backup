@@ -10,7 +10,8 @@ namespace s3backup.Configuration
         {
             try
             {
-                var asm_path = Directory.GetCurrentDirectory();
+                var asm_path = System.Reflection.Assembly.GetExecutingAssembly().GetDirectoryPath();
+
                 config = File.ReadAllText(Path.Combine(asm_path, "config.json"));
             }
             catch
